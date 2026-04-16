@@ -20,7 +20,7 @@
     --surface: #EEF3F8;
     --surface2: #E3EBF4;
   }
-  html { font-size: 22px; }
+  html { font-size: clamp(16px, 1.3vw, 22px); }
   * { margin:0; padding:0; box-sizing:border-box; }
   html { scroll-behavior:smooth; }
   body {
@@ -37,9 +37,9 @@
     position:fixed; top:0; left:0; right:0; z-index:100;
     background: rgba(13,33,55,0.97);
     backdrop-filter: blur(10px);
-    padding: 0 100px;
+    padding: 0 8vw;
     display:flex; align-items:center; justify-content:space-between;
-    height: 80px;
+    height: clamp(64px, 5vw, 90px);
   }
   .nav-brand {
     font-family: 'Playfair Display', serif;
@@ -61,17 +61,17 @@
   /* HERO */
   #home {
     min-height: auto;
-    padding-top: 140px;
-    padding-bottom: 110px;
+    padding-top: clamp(100px, 10vw, 160px);
+    padding-bottom: clamp(80px, 8vw, 130px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 8vw;
+    padding-right: 8vw;
   }
-  .hero-text { padding-right: 80px; }
+  .hero-text { padding-right: 5vw; }
   .hero-eyebrow {
     font-family: 'Space Mono', monospace;
     font-size: 28px; letter-spacing: 0.2em;
@@ -80,7 +80,7 @@
   }
   .hero-name {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(64px, 6vw, 100px);
+    font-size: clamp(72px, 7vw, 120px);
     font-weight: 600; line-height: 1.05;
     color: var(--navy); margin-bottom: 20px;
   }
@@ -118,7 +118,7 @@
     position: relative;
   }
   .portrait-frame {
-    width: 520px; height: 600px; position: relative;
+    width: clamp(300px, 32vw, 560px); height: clamp(360px, 38vw, 640px); position: relative;
   }
   .portrait-bg-shape {
     position: absolute; inset: 0;
@@ -160,11 +160,11 @@
 
   /* SECTIONS */
   section {
-    padding: 100px 100px;
-    max-width: 1400px;
+    padding: 80px 8vw;
+    max-width: 100%;
     margin: 0 auto;
   }
-  .divider { width:100%; height:1px; background:var(--border); max-width:1400px; margin:0 auto; }
+  .divider { width:100%; height:1px; background:var(--border); max-width:100%; margin:0 auto; }
   .section-eyebrow {
     font-family: 'Space Mono', monospace;
     font-size: 28px; letter-spacing: 0.2em;
@@ -173,13 +173,13 @@
   }
   .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(40px, 3.5vw, 56px);
+    font-size: clamp(44px, 4vw, 64px);
     font-weight: 600; color: var(--navy);
     margin-bottom: 52px; line-height: 1.2;
   }
 
   /* ABOUT */
-  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
+  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:5vw; align-items:start; }
   .about-text { font-size:21px; line-height:1.85; color:var(--ink); font-weight:400; }
   .skills-list { list-style:none; display:flex; flex-direction:column; gap:10px; }
   .skills-list li {
@@ -197,7 +197,7 @@
   }
 
   /* EXPERIENCE */
-  .exp-grid { display:grid; grid-template-columns:240px 1fr; gap:0; }
+  .exp-grid { display:grid; grid-template-columns:clamp(180px, 18vw, 280px) 1fr; gap:0; }
   .exp-domain-label {
     padding: 32px 32px 32px 0;
     border-right: 2px solid var(--navy);
@@ -356,7 +356,7 @@
   /* CONTACT */
   #contact {
     background: var(--navy);
-    color: white; padding:80px 80px;
+    color: white; padding:80px 8vw;
     max-width:100%; text-align:center;
   }
   #contact .section-eyebrow { color:var(--gold); }
@@ -376,12 +376,12 @@
   .fade-in { opacity:0; transform:translateY(18px); transition:opacity 0.55s ease, transform 0.55s ease; }
   .fade-in.visible { opacity:1; transform:translateY(0); }
 
-  @media (max-width:900px) {
+  @media (max-width:768px) {
     nav { padding:0 24px; }
     #home { grid-template-columns:1fr; padding:80px 20px 60px; }
     .hero-text { padding-right:0; }
     .hero-portrait { display:none; }
-    section { padding:60px 28px; }
+    section { padding:50px 5vw; }
     .exp-grid { grid-template-columns:1fr; }
     .exp-domain-label { border-right:none; border-bottom:1px solid var(--border); position:static; padding:0 0 14px; }
     .exp-roles { padding-left:0; }
