@@ -20,6 +20,7 @@
     --surface: #EEF3F8;
     --surface2: #E3EBF4;
   }
+  html { font-size: 22px; }
   * { margin:0; padding:0; box-sizing:border-box; }
   html { scroll-behavior:smooth; }
   body {
@@ -27,8 +28,8 @@
     color: var(--ink);
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 1.8;
+    font-size: 21px;
+    line-height: 1.9;
   }
 
   /* NAV */
@@ -36,20 +37,20 @@
     position:fixed; top:0; left:0; right:0; z-index:100;
     background: rgba(13,33,55,0.97);
     backdrop-filter: blur(10px);
-    padding: 0 80px;
+    padding: 0 100px;
     display:flex; align-items:center; justify-content:space-between;
-    height: 72px;
+    height: 80px;
   }
   .nav-brand {
     font-family: 'Playfair Display', serif;
-    font-size: 20px; font-weight: 600;
+    font-size: 28px; font-weight: 600;
     color: var(--gold);
     text-decoration: none;
     letter-spacing: 0.02em;
   }
   .nav-links { display:flex; gap:32px; list-style:none; }
   .nav-links a {
-    font-size: 14px; font-weight: 500;
+    font-size: 21px; font-weight: 500;
     letter-spacing: 0.08em; text-transform: uppercase;
     color: rgba(255,255,255,0.75);
     text-decoration: none;
@@ -60,37 +61,37 @@
   /* HERO */
   #home {
     min-height: auto;
-    padding-top: 120px;
-    padding-bottom: 90px;
+    padding-top: 140px;
+    padding-bottom: 110px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .hero-text { padding-right: 80px; }
   .hero-eyebrow {
     font-family: 'Space Mono', monospace;
-    font-size: 11px; letter-spacing: 0.2em;
+    font-size: 28px; letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--gold); margin-bottom: 20px;
   }
   .hero-name {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(56px, 5.5vw, 86px);
+    font-size: clamp(64px, 6vw, 100px);
     font-weight: 600; line-height: 1.05;
     color: var(--navy); margin-bottom: 20px;
   }
   .hero-tagline {
-    font-size: 17px; font-weight: 400;
-    color: var(--muted); line-height: 1.8;
+    font-size: 21px; font-weight: 400;
+    color: var(--muted); line-height: 1.9;
     margin-bottom: 32px; max-width: 500px;
   }
   .hero-tags { display:flex; flex-wrap:wrap; gap:8px; margin-bottom: 36px; }
   .tag {
-    font-size: 12px; font-weight: 500;
+    font-size: 21px; font-weight: 500;
     padding: 5px 14px;
     border: 1.5px solid var(--border);
     border-radius: 100px;
@@ -99,7 +100,7 @@
   }
   .btn-primary {
     display: inline-block;
-    font-size: 15px; font-weight: 600;
+    font-size: 19px; font-weight: 600;
     letter-spacing: 0.06em; text-transform: uppercase;
     color: white;
     background: var(--navy);
@@ -117,7 +118,7 @@
     position: relative;
   }
   .portrait-frame {
-    width: 440px; height: 510px; position: relative;
+    width: 520px; height: 600px; position: relative;
   }
   .portrait-bg-shape {
     position: absolute; inset: 0;
@@ -159,36 +160,36 @@
 
   /* SECTIONS */
   section {
-    padding: 80px 80px;
+    padding: 100px 100px;
     max-width: 1400px;
     margin: 0 auto;
   }
   .divider { width:100%; height:1px; background:var(--border); max-width:1400px; margin:0 auto; }
   .section-eyebrow {
     font-family: 'Space Mono', monospace;
-    font-size: 11px; letter-spacing: 0.2em;
+    font-size: 28px; letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--gold); margin-bottom: 14px;
   }
   .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(34px, 3vw, 48px);
+    font-size: clamp(40px, 3.5vw, 56px);
     font-weight: 600; color: var(--navy);
     margin-bottom: 52px; line-height: 1.2;
   }
 
   /* ABOUT */
   .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
-  .about-text { font-size:17px; line-height:1.85; color:var(--ink); font-weight:400; }
+  .about-text { font-size:21px; line-height:1.85; color:var(--ink); font-weight:400; }
   .skills-list { list-style:none; display:flex; flex-direction:column; gap:10px; }
   .skills-list li {
     display:flex; align-items:flex-start; gap:14px;
-    padding: 14px 18px;
+    padding: 18px 22px;
     background: var(--white);
     border: 1px solid var(--border);
     border-left: 3px solid var(--navy);
     border-radius: 0 4px 4px 0;
-    font-size: 16px; font-weight: 400;
+    font-size: 28px; font-weight: 400;
   }
   .skill-dot {
     width:8px; height:8px; border-radius:50%;
@@ -196,7 +197,7 @@
   }
 
   /* EXPERIENCE */
-  .exp-grid { display:grid; grid-template-columns:200px 1fr; gap:0; }
+  .exp-grid { display:grid; grid-template-columns:240px 1fr; gap:0; }
   .exp-domain-label {
     padding: 32px 32px 32px 0;
     border-right: 2px solid var(--navy);
@@ -204,24 +205,24 @@
   }
   .domain-name {
     font-family: 'Playfair Display', serif;
-    font-size: 17px; font-weight: 600;
+    font-size: 21px; font-weight: 600;
     color: var(--navy); line-height: 1.4;
   }
-  .domain-desc { font-size:12px; font-weight:400; color:var(--muted); margin-top:6px; }
+  .domain-desc { font-size:19px; font-weight:400; color:var(--muted); margin-top:6px; }
   .exp-roles { padding-left: 44px; }
   .exp-item { padding:28px 0; border-bottom:1px solid var(--border); }
   .exp-item:last-child { border-bottom:none; }
   .exp-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px; }
-  .exp-org { font-weight:600; font-size:17px; color:var(--navy); }
-  .exp-role { font-size:15px; font-weight:500; color:var(--gold); margin-top:3px; }
+  .exp-org { font-weight:600; font-size:21px; color:var(--navy); }
+  .exp-role { font-size:19px; font-weight:500; color:var(--gold); margin-top:3px; }
   .exp-period {
     font-family: 'Space Mono', monospace;
-    font-size:11px; color:var(--muted); white-space:nowrap; padding-top:3px;
+    font-size:21px; color:var(--muted); white-space:nowrap; padding-top:3px;
   }
-  .exp-desc { font-size:16px; font-weight:400; color:#3D4F60; line-height:1.8; }
+  .exp-desc { font-size:28px; font-weight:400; color:#3D4F60; line-height:1.9; }
   .exp-link {
     display:inline-block; margin-top:8px;
-    font-size:12px; font-weight:600;
+    font-size:19px; font-weight:600;
     color:var(--navy-light); text-decoration:none;
     border-bottom:1.5px solid var(--navy-light);
     transition:opacity 0.2s;
@@ -233,7 +234,7 @@
   /* TABS */
   .tabs { display:flex; gap:0; margin-bottom:44px; border-bottom:2px solid var(--border); }
   .tab-btn {
-    font-family:'Inter',sans-serif; font-size:13px; font-weight:500;
+    font-family:'Inter',sans-serif; font-size:28px; font-weight:500;
     color:var(--muted); background:none; border:none;
     padding:12px 24px; cursor:pointer; position:relative;
     transition:color 0.2s;
@@ -254,20 +255,20 @@
     padding:24px 28px;
     border-radius:0 4px 4px 0;
     margin-bottom:40px;
-    font-size:16px; font-weight:400; line-height:1.85;
+    font-size:28px; font-weight:400; line-height:1.85;
   }
   .process-table { width:100%; border-collapse:collapse; margin-bottom:36px; }
   .process-table td {
-    padding:28px 32px; border:1px solid var(--border);
-    font-size:16px; font-weight:400; line-height:1.8; vertical-align:top;
+    padding:32px 36px; border:1px solid var(--border);
+    font-size:28px; font-weight:400; line-height:1.9; vertical-align:top;
   }
   .process-table .step-header {
-    background:var(--surface); font-weight:600; font-size:15px;
+    background:var(--surface); font-weight:600; font-size:19px;
     letter-spacing:0.02em; width:210px; color:var(--navy);
   }
   .process-table strong { color:var(--navy-light); font-weight:600; }
   .btn-outline {
-    display:inline-block; font-size:13px; font-weight:600;
+    display:inline-block; font-size:28px; font-weight:600;
     padding:10px 22px;
     border:2px solid var(--navy);
     border-radius:3px; color:var(--navy);
@@ -277,7 +278,7 @@
   .btn-outline:hover { background:var(--navy); color:white; }
   .note-box {
     background:var(--surface); border-radius:4px;
-    padding:14px 18px; font-size:13px; font-weight:400;
+    padding:14px 18px; font-size:28px; font-weight:400;
     color:var(--muted); margin-bottom:22px;
     border-left:3px solid var(--gold);
   }
@@ -287,22 +288,22 @@
   .qa-case { border:1px solid var(--border); border-radius:6px; overflow:hidden; }
   .qa-case-header {
     background:var(--surface); padding:18px 24px;
-    font-weight:600; font-size:15px;
+    font-weight:600; font-size:19px;
     border-bottom:1px solid var(--border);
     display:flex; align-items:center; gap:10px; color:var(--navy);
   }
   .case-badge {
-    font-family:'Space Mono',monospace; font-size:10px;
+    font-family:'Space Mono',monospace; font-size:28px;
     padding:3px 9px; background:var(--navy);
     color:white; border-radius:2px;
   }
-  .qa-case-body { padding:16px 20px; }
-  .qa-case-body p { font-size:15px; font-weight:400; line-height:1.8; color:#3D4F60; margin-bottom:8px; }
+  .qa-case-body { padding:22px 26px; }
+  .qa-case-body p { font-size:19px; font-weight:400; line-height:1.9; color:#3D4F60; margin-bottom:8px; }
   .qa-case-body strong { color:var(--navy); font-weight:600; }
   .qa-case-img { width:100%; margin-top:12px; border:1px solid var(--border); border-radius:4px; overflow:hidden; }
   .qa-case-img img { width:100%; display:block; }
   .subsection-title {
-    font-family:'Playfair Display',serif; font-size:24px; font-weight:600;
+    font-family:'Playfair Display',serif; font-size:28px; font-weight:600;
     color:var(--navy); margin:44px 0 22px;
   }
 
@@ -316,22 +317,22 @@
   .pb-step:not(:last-child)::after {
     content:'→'; position:absolute;
     right:-14px; top:50%; transform:translateY(-50%);
-    font-size:18px; color:var(--navy);
+    font-size:22px; color:var(--navy);
     background:var(--cream); padding:0 4px; z-index:2;
   }
   .pb-step-num {
-    font-family:'Space Mono',monospace; font-size:10px;
+    font-family:'Space Mono',monospace; font-size:28px;
     color:var(--gold); letter-spacing:0.1em; margin-bottom:8px;
   }
-  .pb-step-title { font-weight:600; font-size:13px; color:var(--navy); margin-bottom:5px; }
-  .pb-step-desc { font-size:12px; font-weight:400; color:var(--muted); line-height:1.6; }
+  .pb-step-title { font-weight:600; font-size:28px; color:var(--navy); margin-bottom:5px; }
+  .pb-step-desc { font-size:19px; font-weight:400; color:var(--muted); line-height:1.6; }
   .pb-output-table { width:100%; border-collapse:collapse; margin-bottom:28px; }
   .pb-output-table td {
     padding:24px 28px; border:1px solid var(--border);
-    font-size:15.5px; font-weight:400; line-height:1.85; vertical-align:top;
+    font-size:28px; font-weight:400; line-height:1.85; vertical-align:top;
   }
   .pb-output-table .label-cell {
-    background:var(--surface); font-weight:600; font-size:14px;
+    background:var(--surface); font-weight:600; font-size:21px;
     letter-spacing:0.04em; width:180px; color:var(--navy-light);
   }
   .pb-output-table td:nth-child(2) { width:260px; vertical-align:top; }
@@ -339,7 +340,7 @@
   .pub-list li {
     padding:14px 18px; background:var(--white);
     border:1px solid var(--border); border-radius:4px;
-    font-size:14px; font-weight:400; display:flex; align-items:flex-start; gap:12px;
+    font-size:21px; font-weight:400; display:flex; align-items:flex-start; gap:12px;
   }
   .pub-list li::before { content:'→'; color:var(--gold); flex-shrink:0; margin-top:2px; font-weight:600; }
 
@@ -360,11 +361,11 @@
   }
   #contact .section-eyebrow { color:var(--gold); }
   #contact .section-title { color:white; margin-bottom:20px; }
-  .contact-tagline { font-size:15px; font-weight:400; color:rgba(255,255,255,0.65); margin-bottom:44px; }
+  .contact-tagline { font-size:19px; font-weight:400; color:rgba(255,255,255,0.65); margin-bottom:44px; }
   .contact-links { display:flex; justify-content:center; gap:24px; flex-wrap:wrap; }
   .contact-link {
     display:flex; align-items:center; gap:10px;
-    font-size:16px; font-weight:500; color:rgba(255,255,255,0.85);
+    font-size:28px; font-weight:500; color:rgba(255,255,255,0.85);
     text-decoration:none; padding:16px 28px;
     border:1.5px solid rgba(255,255,255,0.25);
     border-radius:4px; transition:all 0.2s;
@@ -380,7 +381,7 @@
     #home { grid-template-columns:1fr; padding:80px 20px 60px; }
     .hero-text { padding-right:0; }
     .hero-portrait { display:none; }
-    section { padding:60px 24px; }
+    section { padding:60px 28px; }
     .exp-grid { grid-template-columns:1fr; }
     .exp-domain-label { border-right:none; border-bottom:1px solid var(--border); position:static; padding:0 0 14px; }
     .exp-roles { padding-left:0; }
@@ -587,9 +588,9 @@
         <td>
           <strong>Analytical Approach:</strong> In designing the learning experience, I applied several instructional design principles (not limited to):
           <ul style="margin:12px 0 16px 20px; display:flex; flex-direction:column; gap:8px; list-style:disc;">
-            <li style="font-size:14px;line-height:1.75;color:#3D4F60;"><strong style="color:#1A3A5C;">Bloom's Taxonomy</strong> — Learning activities and assessments are designed across different cognitive levels, including Remembering, Understanding, Applying &amp; Analyzing.</li>
-            <li style="font-size:14px;line-height:1.75;color:#3D4F60;"><strong style="color:#1A3A5C;">Learner-Centered Design</strong> — The course is designed to prioritize learner needs by using relatable scenarios, providing practical applications, and structuring content progressively.</li>
-            <li style="font-size:14px;line-height:1.75;color:#3D4F60;"><strong style="color:#1A3A5C;">Microlearning Approach (Cognitive Load Theory)</strong> — The course content is structured into small, manageable segments to reduce cognitive overload and improve comprehension.</li>
+            <li style="font-size:18px;line-height:1.75;color:#3D4F60;"><strong style="color:#1A3A5C;">Bloom's Taxonomy</strong> — Learning activities and assessments are designed across different cognitive levels, including Remembering, Understanding, Applying &amp; Analyzing.</li>
+            <li style="font-size:18px;line-height:1.75;color:#3D4F60;"><strong style="color:#1A3A5C;">Learner-Centered Design</strong> — The course is designed to prioritize learner needs by using relatable scenarios, providing practical applications, and structuring content progressively.</li>
+            <li style="font-size:18px;line-height:1.75;color:#3D4F60;"><strong style="color:#1A3A5C;">Microlearning Approach (Cognitive Load Theory)</strong> — The course content is structured into small, manageable segments to reduce cognitive overload and improve comprehension.</li>
           </ul>
           <strong>Output:</strong>
           <a href="https://docs.google.com/spreadsheets/d/1TEbZbcLwHvLM9D3Vn29cMMxuZivc0D-CDamni5qDcCw/edit?gid=1660365480" target="_blank" class="btn-outline" style="margin-top:10px; display:inline-block;">Storyboard ↗</a>
@@ -607,8 +608,8 @@
     <h3 class="subsection-title fade-in">Final Output — Visit the link to explore the full course experience</h3>
     <div class="fade-in" style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:32px;text-align:center;margin-bottom:28px;">
       <div style="font-size:32px;margin-bottom:12px;">🎓</div>
-      <p style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;">Healthy Pregnancy: Understanding Changes, Challenges, and Informed Decisions</p>
-      <p style="font-size:14px;font-weight:400;color:var(--muted);margin-bottom:20px;line-height:1.7;">An interactive mobile-based course covering pregnancy changes, challenges, and common misconceptions — built with quizzes, branching scenarios, and gamified learning.</p>
+      <p style="font-size:19px;font-weight:600;color:var(--navy);margin-bottom:8px;">Healthy Pregnancy: Understanding Changes, Challenges, and Informed Decisions</p>
+      <p style="font-size:18px;font-weight:400;color:var(--muted);margin-bottom:20px;line-height:1.7;">An interactive mobile-based course covering pregnancy changes, challenges, and common misconceptions — built with quizzes, branching scenarios, and gamified learning.</p>
       <a href="https://srihardyanti.github.io/healthy-pregnancy-course/" target="_blank" class="btn-primary" style="display:inline-block;">Experience the Course ↗</a>
     </div>
 </div>
@@ -638,10 +639,10 @@
     </table>
 
     <h3 class="subsection-title fade-in">QA Output (Sample)</h3>
-    <p style="font-size:14px;color:var(--muted);margin-bottom:24px;font-weight:400;" class="fade-in">Due to confidentiality constraints, full course drafts cannot be shared. Instead, selected excerpts are used to demonstrate how I identify issues, analyze content, and provide constructive feedback to improve instructional quality.</p>
+    <p style="font-size:18px;color:var(--muted);margin-bottom:24px;font-weight:400;" class="fade-in">Due to confidentiality constraints, full course drafts cannot be shared. Instead, selected excerpts are used to demonstrate how I identify issues, analyze content, and provide constructive feedback to improve instructional quality.</p>
 
-    <h4 style="font-weight:600;font-size:15px;margin-bottom:16px;color:var(--navy);" class="fade-in">Audio-visual script for theory/conceptual module</h4>
-    <p style="font-size:13.5px;color:var(--muted);margin-bottom:20px;font-weight:400;" class="fade-in">Description: Audio-visual scripts are a core component of self-paced courses. They include voice-over narration, slide text, and notes for the multimedia team. Each section typically follows a structured flow: Opening slide presenting the main idea or thesis → Supporting slides explaining the "why" and "how" with evidence → Closing slide summarizing key points.</p>
+    <h4 style="font-weight:600;font-size:19px;margin-bottom:16px;color:var(--navy);" class="fade-in">Audio-visual script for theory/conceptual module</h4>
+    <p style="font-size:21px;color:var(--muted);margin-bottom:20px;font-weight:400;" class="fade-in">Description: Audio-visual scripts are a core component of self-paced courses. They include voice-over narration, slide text, and notes for the multimedia team. Each section typically follows a structured flow: Opening slide presenting the main idea or thesis → Supporting slides explaining the "why" and "how" with evidence → Closing slide summarizing key points.</p>
 
     <div class="qa-case-grid">
       <div class="qa-case fade-in">
@@ -681,8 +682,8 @@
       </div>
     </div>
 
-    <h4 style="font-weight:600;font-size:15px;margin-bottom:12px;color:var(--navy);" class="fade-in">Case Study</h4>
-    <p style="font-size:13.5px;color:var(--muted);margin-bottom:20px;font-weight:400;" class="fade-in">Description: Case studies were designed using H5P format and presenting branching scenarios to encourage critical thinking and application of concepts in real-life situations.</p>
+    <h4 style="font-weight:600;font-size:19px;margin-bottom:12px;color:var(--navy);" class="fade-in">Case Study</h4>
+    <p style="font-size:21px;color:var(--muted);margin-bottom:20px;font-weight:400;" class="fade-in">Description: Case studies were designed using H5P format and presenting branching scenarios to encourage critical thinking and application of concepts in real-life situations.</p>
 
     <div class="qa-case-grid">
       <div class="qa-case fade-in">
@@ -705,8 +706,8 @@
       </div>
     </div>
 
-    <h4 style="font-weight:600;font-size:15px;margin-bottom:12px;color:var(--navy);" class="fade-in">Quiz and Assessment</h4>
-    <p style="font-size:13.5px;color:var(--muted);margin-bottom:20px;font-weight:400;" class="fade-in">Description: Assessments were designed across various formats, targeting different cognitive levels from understanding to analysis.</p>
+    <h4 style="font-weight:600;font-size:19px;margin-bottom:12px;color:var(--navy);" class="fade-in">Quiz and Assessment</h4>
+    <p style="font-size:21px;color:var(--muted);margin-bottom:20px;font-weight:400;" class="fade-in">Description: Assessments were designed across various formats, targeting different cognitive levels from understanding to analysis.</p>
 
     <div class="qa-case-grid">
       <div class="qa-case fade-in">
@@ -739,14 +740,14 @@
     </div>
 
     <h3 class="subsection-title fade-in">Output Sample</h3>
-    <p style="font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;" class="fade-in">Title</p>
-    <p style="font-size:14px;font-weight:400;color:var(--ink);margin-bottom:28px;" class="fade-in">
+    <p style="font-size:18px;font-weight:600;color:var(--navy);margin-bottom:4px;" class="fade-in">Title</p>
+    <p style="font-size:18px;font-weight:400;color:var(--ink);margin-bottom:28px;" class="fade-in">
       <strong>Berjuang Bersama Menyambut Buah Hati (Urgensi Cuti Kelahiran bagi Ayah)</strong> No. 01/PB/R01/CICP/2019<br>
       <em>English: Welcoming a Child Together: The Urgency of Paternal Leave</em>
     </p>
 
     <h3 class="subsection-title fade-in">Process and Analytical Approach</h3>
-    <p style="font-size:14px;color:var(--muted);margin-bottom:24px;font-weight:400;" class="fade-in">
+    <p style="font-size:18px;color:var(--muted);margin-bottom:24px;font-weight:400;" class="fade-in">
       Notes: All policy brief articles are originally published in Bahasa Indonesia. I have provided the English summaries to reach a broader audience.
     </p>
 
@@ -757,10 +758,10 @@
           The analysis began by reviewing research findings from the CICP Research Team on father involvement and child development. To maintain focus, optimizing child development was defined as the primary objective, guiding all subsequent exploration.<br><br>
           <strong>Guiding question:</strong>
           <ul style="margin:10px 0 10px 20px;display:flex;flex-direction:column;gap:6px;list-style:disc;">
-            <li style="font-size:14px;line-height:1.75;color:#3D4F60;">What key child development challenges in Indonesia are related to father and child relationships?</li>
-            <li style="font-size:14px;line-height:1.75;color:#3D4F60;">What are the key child development challenges currently observed in Indonesia?</li>
-            <li style="font-size:14px;line-height:1.75;color:#3D4F60;">What factors contribute to these developmental challenges?</li>
-            <li style="font-size:14px;line-height:1.75;color:#3D4F60;">How can strong father and child relationships be developed?</li>
+            <li style="font-size:18px;line-height:1.75;color:#3D4F60;">What key child development challenges in Indonesia are related to father and child relationships?</li>
+            <li style="font-size:18px;line-height:1.75;color:#3D4F60;">What are the key child development challenges currently observed in Indonesia?</li>
+            <li style="font-size:18px;line-height:1.75;color:#3D4F60;">What factors contribute to these developmental challenges?</li>
+            <li style="font-size:18px;line-height:1.75;color:#3D4F60;">How can strong father and child relationships be developed?</li>
           </ul>
           <strong>Analytical Approach:</strong> The exploration focused on identifying the link between paternal involvement and child development outcomes, particularly through interaction patterns, emotional bonding, and relational mechanisms such as trust during early childhood.
         </td>
@@ -771,7 +772,7 @@
           With a clearer understanding of the issue and its underlying mechanisms, the next step was to identify gaps in existing government regulations.<br><br>
           <strong>Guiding question:</strong>
           <ul style="margin:10px 0 10px 20px;display:flex;flex-direction:column;gap:6px;list-style:disc;">
-            <li style="font-size:14px;line-height:1.75;color:#3D4F60;">How do existing government regulations limit early paternal involvement in Indonesia?</li>
+            <li style="font-size:18px;line-height:1.75;color:#3D4F60;">How do existing government regulations limit early paternal involvement in Indonesia?</li>
           </ul>
           <strong>Analytical Approach:</strong> This stage focused on reviewing relevant regulatory frameworks and identifying misalignment between policy provisions and the developmental need for early father and child interaction. The analysis explored how the structure, clarity, and scope of existing leave policies influence fathers' ability to engage during the newborn stage, as well as how these policies are interpreted and implemented in practice.
         </td>
@@ -782,7 +783,7 @@
           The final stage focused on formulating policy recommendations to address the identified gap and improve support for early paternal involvement.<br><br>
           <strong>Guiding question:</strong>
           <ul style="margin:10px 0 10px 20px;display:flex;flex-direction:column;gap:6px;list-style:disc;">
-            <li style="font-size:14px;line-height:1.75;color:#3D4F60;">How can policy better support early paternal involvement?</li>
+            <li style="font-size:18px;line-height:1.75;color:#3D4F60;">How can policy better support early paternal involvement?</li>
           </ul>
           <strong>Analytical Approach:</strong> The recommendation process emphasized aligning policy design with both child development needs and implementation feasibility. This involved considering how policy clarity, accessibility, and cross-sector coordination could influence adoption and effectiveness, as well as how public awareness and institutional support systems contribute to sustained behavioral change. The goal was to ensure that proposed solutions are not only theoretically sound, but also practical and scalable within the existing policy and social context.
         </td>
@@ -790,7 +791,7 @@
     </table>
 
     <h3 class="subsection-title fade-in">Final Output</h3>
-    <p style="font-size:14px;color:var(--muted);margin-bottom:24px;font-weight:400;" class="fade-in">
+    <p style="font-size:18px;color:var(--muted);margin-bottom:24px;font-weight:400;" class="fade-in">
       Notes: All policy brief articles are originally published in Bahasa Indonesia. I have provided the English summaries to reach a broader audience.
     </p>
 
